@@ -11,6 +11,7 @@ Pydantic 2.6.1
 pip (package manager)
 
 ## Project Structure
+```
 app/
 ├── routers/
 │ ├── students.py
@@ -22,44 +23,52 @@ app/
 └── main.py
 requirements.txt
 README.md
-
+```
 ## Environment Setup
 
 1. Clone the repository
+```
 git clone <URL>
 cd <repo-folder>
-
+```
 2. Create and activate a virtual environment:
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 
 3. Install dependencies:
+```
 pip install -r requirements.txt
+```
 
 ## Build Instructions
 
 No additional build process is required. 
-Installing dependencies is considered the build proces:
+Installing dependencies is considered a build process:
 pip install -r requirements.txt
 
 ## Running the application
-
+```
 Start the FastAPI server:
 uvicorn app.main:app --reload --port 8000 
 - or any other port of choice, e.g. --port 8080
+```
 
 Application will be available at:
-http://localhost:800
-The API specification will be available at: http://localhost:800/docs
+```
+http://localhost:8000
+The API specification will be available at: http://localhost:8000/docs
+```
 
 ## Postman Public Test Instructions
-
--the application must be running
--the database must be empty before each test run
--import the provided Postman collection and environment files
--in Postman Runner, select "Run manually"
--do not change the order of tests
-
+```
+- the application must be running
+- the database must be empty before each test run
+- import the provided Postman collection and environment files
+- in Postman Runner, select "Run manually"
+- do not change the order of tests
+```
 ## Running Unit Tests
 No unit tests
 
