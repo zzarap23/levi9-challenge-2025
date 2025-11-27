@@ -4,11 +4,13 @@ Backend solution for student meal reservations in university canteens.
 Includes Students, Canteens, Reservations, and capacity/status logic.
 
 ## Technologies
+```
 Python 3.10+
 FastAPI 0.110.0
 Uvicorn 0.30.0
 Pydantic 2.6.1
 pip (package manager)
+```
 
 ## Project Structure
 ```
